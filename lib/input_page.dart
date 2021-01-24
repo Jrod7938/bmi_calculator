@@ -140,6 +140,11 @@ class _InputPageState extends State<InputPage> {
                           children: <Widget>[
                             FloatingActionButton(
                               backgroundColor: Color(0xFF4C4F5E),
+                              onPressed: () {
+                                setState(() {
+                                  weight -= 1;
+                                });
+                              },
                               child: Icon(
                                 Icons.remove,
                                 color: Colors.white,
@@ -147,6 +152,11 @@ class _InputPageState extends State<InputPage> {
                             ),
                             FloatingActionButton(
                               backgroundColor: Color(0xFF4C4F5E),
+                              onPressed: () {
+                                setState(() {
+                                  weight += 1;
+                                });
+                              },
                               child: Icon(
                                 Icons.add,
                                 color: Colors.white,
