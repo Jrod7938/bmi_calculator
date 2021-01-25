@@ -182,6 +182,44 @@ class _InputPageState extends State<InputPage> {
             margin: EdgeInsets.only(top: 10.0),
             width: double.infinity,
             height: kBottomContainerHeight,
+            child: ReusableCard(
+              color: kActiveCardColor,
+              cardChild: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  FloatingActionButton(
+                    backgroundColor: Color(0xFF4C4F5E),
+                    onPressed: () {
+                      setState(() {});
+                    },
+                    child: Icon(
+                      Icons.home,
+                      color: Colors.white,
+                    ),
+                  ),
+                  FloatingActionButton(
+                    backgroundColor: Color(0xFF4C4F5E),
+                    onPressed: () {
+                      setState(() {});
+                    },
+                    child: Icon(
+                      Icons.calculate,
+                      color: Colors.white,
+                    ),
+                  ),
+                  FloatingActionButton(
+                    backgroundColor: Color(0xFF4C4F5E),
+                    onPressed: () {
+                      setState(() {});
+                    },
+                    child: Icon(
+                      Icons.run_circle,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),
